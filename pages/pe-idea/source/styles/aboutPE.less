@@ -1,0 +1,113 @@
+//预置
+@red: #C00;
+.transition(@transitionTime) {
+  transition: all @transitionTime ease-out;
+  -webkit-transition: all @transitionTime ease-out;
+  -moz-transition: all @transitionTime ease-out;;
+}
+#aboutPEPage {
+  #myHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .section {
+    padding-top: 70px;
+  }
+  #aboutPE {
+    .aboutPE-content {
+      margin-bottom: 70px;
+      .content-item {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        min-width: 200px;
+        i {
+          flex-grow: 0;
+          flex-shrink: 0;
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background: url('../img/background/aboutPE-content-bg.png') no-repeat;
+        }
+        i.firstIcon {
+          background-position: 0 0;
+        }
+        i.secondIcon {
+          background-position: 33.3% 0;
+        }
+        i.thirdIcon {
+          background-position: 66.6% 0;
+        }
+        i.fourthIcon {
+          background-position: 100% 0;
+        }
+        .content-item-text {
+          flex-grow: 0;
+          flex-shrink: 0;
+          display: inline-block;
+          margin-left: 25px;
+          width: 120px;
+          text-align: justify;
+          h3 {
+            margin-bottom: 10px;
+            color: #951d22;
+            font-size: 20px;
+            font-size: 2.0rem;
+          }
+          p {
+            font-size: 13px;
+            font-size: 1.3rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    //section头部
+    .sectionIntro {
+      position: relative;
+      margin-bottom: 50px;
+      text-align: center;
+      color: #951d22;
+      .sectionIntro-title {
+        position: relative;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #a7a7a7;
+        p {
+          font-family: "Arial Black", sans-serif;
+          font-size: 12px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .aboutPE-customer {
+      margin-bottom: 20px;
+      .myTable {
+        margin: 0 auto;
+        width: 85%;
+        td {
+          text-align: center;
+          border: 1px solid #bfbfbf;
+          img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+          }
+          &:hover img {
+            filter: none;
+            -webkit-filter: none;
+            transition: 0.3s all ease-in;
+          }
+        }
+      }
+    }
+    .aboutPEImage {
+      text-align: center;
+      img {
+        width: 100%
+      }
+    }
+  }
+}
+

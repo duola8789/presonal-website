@@ -1,0 +1,71 @@
+/* @color-ref
+#29B078  --  RGB(41,176,120)
+---------------------------------------------------------------------------*/
+html {
+  font-size: 65%;
+}
+body {
+  font-family: 'Microsoft Yahei', SimSun, sans-serif;
+  font-size: 1.4rem;
+  background-color: rgb(199, 237, 204);
+}
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a:link, a:visited, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+@media screen and (max-width: 1220px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 38.5%;
+  }
+
+}
+h1, h2 {
+  margin: 1rem 0;
+}
+div.big {
+  text-align: center;
+  color: #5CACEE;
+  border-bottom: #5CACEE dotted 5px;
+  font-size: 3rem;
+}
+div.small {
+  color: black;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+}
+a:hover {
+  color: darkred;
+  background: #fff;
+}
+ul {
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+li {
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  padding: 1rem;
+  margin: .8rem;
+  border: 1px solid #5CACEE;
+  border-radius: 5px;
+}
+.small ul {
+  border-bottom: #080808 dotted 3px;
+}

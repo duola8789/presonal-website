@@ -1,0 +1,158 @@
+.wrap {
+  min-width: 960px;
+}
+.header h1 {
+  font-size: 40px;
+  padding: 15px 0 10px;
+}
+.nav {
+  font-size: 18px;
+  clear: both;
+}
+.nav ul li {
+  padding: 10px 0;
+}
+.nav ul li a {
+  padding: 0 25px;
+}
+.main {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.main p,
+.main span {
+  font-size: 20px;
+}
+.main h5 {
+  font-size: 30px;
+}
+.page2Main li {
+  padding: 10px 0 30px;
+  border-bottom: 3px double #333;
+}
+.page2Main li p {
+  line-height: 40px;
+}
+.page2Main li span {
+  line-height: 15px;
+}
+.page2Main li h5 {
+  padding: 20px 0;
+}
+.footer {
+  padding: 8px 0;
+  font-size: 12px;
+}
+.footer li {
+  width: 130px;
+}
+.page3Main h2 {
+  padding: 20px 0 10px;
+  border-bottom: 3px double #333;
+}
+.page3Main > ul {
+  margin-top: 10px;
+}
+.page3Main > ul > li {
+  margin: 10px 12px 0;
+  padding: 10px 0;
+  width: 270px;
+}
+.page3Main > ul > li img {
+  width: 100px;
+  border: none;
+}
+.page3Main > ul > li div {
+  width: 160px;
+}
+.page3Main > ul > li div h6 {
+  font-size: 20px;
+}
+.page3Main > ul > li div p {
+  font-size: 15px;
+  line-height: 22px;
+}
+.page3Main > ul > li div p.level {
+  height: 60px;
+}
+.page3Main ul li ul li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.page3Main ul.project img {
+  width: 100%;
+  margin: 0.04rem 0;
+}
+.page3Main ul.project h6 {
+  margin: 10px 0;
+}
+.page3Main ul.project span {
+  margin: 4px 0;
+}
+.page3Main ul.project p {
+  margin: 4px 0;
+}
+.page4Main {
+  margin: 0 auto 45px;
+}
+.page4Main h2 {
+  margin: 30px 0 10px;
+}
+.page4Main p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+.page5Main h2 {
+  padding: 20px 0 10px;
+}
+.page5Main ul {
+  margin-left: 40px;
+}
+.page5Main ul li {
+  margin: 13px 12px 0;
+  width: 260px;
+  height: 150px;
+}
+.page5Main ul li span {
+  position: static;
+  margin-top: 15%;
+  font-size: 14px;
+  line-height: 25px;
+}
+.page5Main ul li:hover span {
+  font-size: 16px;
+}
+.page5Main ul li.index-old span {
+  color: #414;
+}
+#wrap3 {
+  display: none;
+  position: relative;
+  width: 400px;
+  height: 120px;
+  padding: 30px;
+  background: #000000;
+}
+#wrap3 h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+#wrap3 .close {
+  width: 25px;
+  height: 25px;
+  background: url("../../images/close2.png") no-repeat center;
+  border: none;
+}
+#wrap3 P {
+  font-size: 14px;
+  line-height: 30px;
+}
+#wrap3 P span.left {
+  width: 55px;
+}
+#wrap3 img {
+  width: 100px;
+  border: none;
+}

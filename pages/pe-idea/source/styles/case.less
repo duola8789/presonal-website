@@ -1,0 +1,39 @@
+//预置
+@red: #C00;
+.transition(@transitionTime) {
+  transition: all @transitionTime ease-out;
+  -webkit-transition: all @transitionTime ease-out;
+  -moz-transition: all @transitionTime ease-out;;
+}
+#casePage {
+  #myHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  #case {
+    .caseList {
+      margin-bottom: 20px;
+      //案例展示导航
+      .items-nav {
+        width: 100%;
+        text-align: center;
+        li {
+          display: inline-block;
+          margin: 0 15px 20px;
+          font-size: 14px;
+          font-size: 1.4rem;
+          cursor: pointer;
+          padding: 5px;
+          color: #a7a7a7;
+        }
+        .active, li:hover {
+          color: #fff;
+          background: #666;
+          .transition(0.5s);
+        }
+      }
+    }
+  }
+}
+

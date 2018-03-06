@@ -1,0 +1,566 @@
+/*--预置类--------------------------------------------------------*/
+ul,
+li,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+}
+a:link,
+a:visited,
+a:focus,
+a:active {
+  color: #999;
+  text-decoration: none;
+}
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+.invalid {
+  border: 1pc solid #737373 !important;
+  background-color: #000;
+  opacity: 0.3;
+}
+.showing {
+  background: #fff !important;
+}
+a,
+li {
+  transition: all 200ms ease;
+}
+.showA2 {
+  background: #212121 !important;
+  color: #666 !important;
+}
+.showA2 a:hover {
+  color: #dfdfdf !important;
+}
+.aShowing {
+  border-bottom: 1px dotted #999;
+}
+/*--样式表start------------------------------------------------------*/
+html {
+  width: 150%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "STHeitiSC-Light", '微软雅黑', sans-serif;
+  overflow: hidden;
+  min-height: 400px;
+  min-width: 1500px;
+}
+#wrap1 {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #dfdfdf;
+  text-align: center;
+}
+#wrap1 h1 {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+}
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  font-size: 0.5rem;
+  overflow: hidden;
+}
+footer ul {
+  width: 400px;
+  border-right: 0;
+  overflow: hidden;
+}
+footer li {
+  width: 78px;
+  float: left;
+  padding: 7px 0;
+  text-align: center;
+  border: 1px solid #999;
+  border-right: none;
+}
+footer li a:hover {
+  color: #333;
+}
+footer li:last-child {
+  border-right: 1px solid #999;
+}
+footer #contact {
+  color: red;
+}
+#wrap2 {
+  width: 66.6%;
+  height: 100%;
+  min-width: 998px;
+  float: left;
+  position: relative;
+}
+#wrap2 #left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#wrap2 #left .list {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  text-align: center;
+}
+#wrap2 #left h3 {
+  margin: 10% 0;
+  color: #666;
+}
+#wrap2 #left #listUl {
+  margin: 0 auto;
+}
+#wrap2 #left #listUl a {
+  padding: 5px 0;
+}
+#wrap2 #left #listUl li {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #888;
+}
+#wrap2 #left #listUl li a:hover {
+  cursor: pointer;
+  color: #333;
+}
+#wrap2 #left #listUl li#leftA-2li {
+  display: none;
+}
+#wrap2 #left #listUl li#leftA-2li .skillClicked {
+  background: url("../images/skill-using.png") no-repeat center !important;
+  background-size: cover !important;
+}
+#wrap2 #left #listUl li#leftA-2li .projectClicked {
+  background: url("../images/project-using.png") no-repeat center !important;
+  background-size: cover !important;
+}
+#wrap2 #left #listUl li#leftA-2li a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 6px;
+  padding: 0;
+  transition: none;
+}
+#wrap2 #left #listUl li#leftA-2li a:first-child {
+  background: url("../images/skill.png") no-repeat center;
+  background-size: cover;
+}
+#wrap2 #left #listUl li#leftA-2li a:first-child:hover {
+  background: url("../images/skill-using.png") no-repeat center !important;
+  background-size: cover !important;
+}
+#wrap2 #left #listUl li#leftA-2li a:last-child {
+  background: url("../images/project.png") no-repeat center;
+  background-size: cover;
+}
+#wrap2 #left #listUl li#leftA-2li a:last-child:hover {
+  background: url("../images/project-using.png") no-repeat center !important;
+  background-size: cover !important;
+}
+#wrap2 #right1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: #dfdfdf;
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+#wrap2 #right1 #outer {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  left: 50%;
+  bottom: 45%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+#wrap2 #right1 ul#rightUl {
+  width: 2500px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+#wrap2 #right1 ul#rightUl li {
+  width: 350px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#wrap2 #right1 ul#rightUl li p {
+  font-size: 16px;
+  line-height: 28px;
+}
+#wrap2 #right1 ul#rightUl li h5 {
+  width: 100px;
+  margin: 20px auto 30px;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+#wrap2 #right1 ul#rightUl li a {
+  border-bottom: 1px dotted #999;
+}
+#wrap2 #right1 ul#rightUl .page1 {
+  background: url("../images/art.png") center no-repeat;
+  background-size: contain;
+}
+#wrap2 #right1 ul#rightUl .page1 p {
+  line-height: 32px;
+}
+#wrap2 #right1 ul#rightUl .page1 p:first-child {
+  margin-top: 55px;
+}
+.btn {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.btn button {
+  width: 58px;
+  height: 27px;
+  margin: 0 2%;
+  border: 1px solid #737373;
+  transition: all 200ms ease;
+}
+.btn button:hover {
+  cursor: pointer;
+  border: 1px solid #aaa;
+}
+.btn #backBtn {
+  background: url("../images/icon-back.gif") no-repeat center;
+  background-size: contain;
+}
+.btn #forwardBtn {
+  background: url("../images/icon-forward.gif") no-repeat center;
+  background-size: contain;
+}
+.btn2 {
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  transform: translateX(-50%);
+}
+.btn2 li {
+  display: inline-block;
+  margin: 0 2px;
+  width: 8px;
+  height: 8px;
+  background: #3d3d3d;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  cursor: pointer;
+}
+.btn2 li:hover {
+  background: #fff;
+}
+.rightShow {
+  visibility: hidden;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: #dfdfdf;
+}
+.rightShow .rightShowUl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rightShow .rightShowUl li {
+  width: 24.8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+.rightShow .rightShowUl li a {
+  width: 95%;
+  height: 95%;
+  text-align: center;
+  border: 4px solid #fff;
+  transition: border 0.5s ease-out;
+  -webkit-transition: border 0.5s ease-out;
+}
+.rightShow .rightShowUl li a:hover {
+  border: 4px solid #e1e1e1;
+  cursor: default;
+}
+.rightShow .rightShowUl li a span {
+  display: inline-block;
+  margin-top: 65%;
+}
+.rightShow .rightShowUl li ul {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.rightShow .rightShowUl li ul li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url("../images/star2.png") no-repeat center;
+  background-size: cover;
+}
+.rightShow .rightShowUl li ul .good {
+  background: url("../images/star1.png") no-repeat center;
+  background-size: cover;
+}
+#right2Ul > li:first-child {
+  background: url("../images/html.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(2) {
+  background: url("../images/css.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(3) {
+  background: url("../images/js.png") no-repeat center 22%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(4) {
+  background: url("../images/jquery.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(5) {
+  background: url("../images/bootstrap.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(6) {
+  background: url("../images/less.png") no-repeat center 30%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(7) {
+  background: url("../images/gulp.png") no-repeat center 10%;
+  background-size: 25%;
+}
+#right2Ul > li:nth-child(8) {
+  background: url("../images/nginx.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(9) {
+  background: url("../images/node.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(10) {
+  background: url("../images/angular.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(11) {
+  background: url("../images/vue.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right2Ul > li:nth-child(12) {
+  background: url("../images/react.png") no-repeat center 15%;
+  background-size: 50%;
+}
+#right3Ul > li:first-child {
+  background: url("../images/project1.png") no-repeat center 25%;
+  background-size: 150px;
+}
+#right3Ul > li:nth-child(2) {
+  background: url("../images/project2.jpg") no-repeat center 25%;
+  background-size: 150px;
+}
+#right3Ul > li:nth-child(3) {
+  background: url("../images/project3.jpg") no-repeat center 25%;
+  background-size: 150px;
+}
+#right3Ul > li:nth-child(4) {
+  background: url("../images/project4.jpg") no-repeat center 25%;
+  background-size: 150px;
+}
+#right3Ul > li:nth-child(5) {
+  background: url("../images/project5.jpg") no-repeat center 20%;
+  background-size: 60px;
+}
+#right3Ul > li:nth-child(5) span {
+  margin-top: 80%;
+}
+#right3Ul > li:nth-child(6) {
+  background: url("../images/project6.jpg") no-repeat center 20%;
+  background-size: 60px;
+}
+#right3Ul > li:nth-child(6) span {
+  margin-top: 75%;
+}
+#right3Ul > li:nth-child(7) {
+  background: url("../images/project7.jpg") no-repeat center 25%;
+  background-size: 150px;
+}
+#right3Ul > li:nth-child(8) {
+  background: url("../images/continued.jpg") no-repeat center;
+  background-size: 300px;
+}
+#right3Ul > li:nth-child(8) a:hover {
+  cursor: default;
+  border: none;
+}
+#right3Ul > li a:hover {
+  cursor: pointer;
+}
+#right3Ul > li span {
+  margin-top: 70%;
+  font-size: 16px;
+  width: 160px;
+  line-height: 25px;
+}
+#right4 {
+  visibility: hidden;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#right4 iframe {
+  width: 100%;
+  height: 100%;
+}
+button.close {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #737373;
+  background: url("../images/close.png") no-repeat center;
+  background-size: 50%;
+  cursor: pointer;
+}
+button.close:hover {
+  border: 1px solid #aaa;
+}
+#right5 {
+  display: none;
+  padding: 40px 0;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #dfdfdf;
+}
+#right5 p {
+  display: none;
+  padding: 0 40px;
+  margin: 30px 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999;
+}
+#right5 p strong {
+  color: red;
+}
+#right6 {
+  font-size: 14px;
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+#right6 a {
+  border: none;
+}
+#right6 a:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  border: none;
+}
+#right6 span {
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+#right6 .lol {
+  font-style: normal;
+  text-decoration: line-through;
+}
+#right6 li.index-old a {
+  cursor: pointer;
+  color: #269abc;
+}
+#wrap3 {
+  display: none;
+  position: relative;
+  width: 400px;
+  height: 120px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaa;
+}
+#wrap3 h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #fff;
+}
+#wrap3 .close {
+  right: 5%;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  background: url("../images/close2.png") no-repeat center;
+  border: 1px solid #737373;
+  background-size: 100%;
+}
+#wrap3 .close:hover {
+  border: 1px solid #aaa;
+}
+#wrap3 P {
+  font-size: 14px;
+  line-height: 30px;
+}
+#wrap3 P span.left {
+  display: inline-block;
+  width: 55px;
+}
+#wrap3 img {
+  width: 100px;
+  position: absolute;
+  right: 18%;
+  top: 30%;
+}

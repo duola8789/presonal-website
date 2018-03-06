@@ -1,0 +1,436 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+a,
+a:link,
+a:visited,
+a:focus,
+a:active {
+  color: #999;
+  text-decoration: none;
+  vertical-align: middle;
+}
+a:hover {
+  color: #000 !important;
+}
+li,
+a {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+input {
+  background: #d0e5f5;
+}
+input:focus {
+  background: #baec7e;
+  border: 1px solid cornflowerblue;
+}
+/*----预置类结束---------------------------------------------------------------------------*/
+html {
+  width: 100%;
+  min-width: 320px;
+  font-family: "Helvetica Neue", "Helvetica", "STHeitiSC-Light", '微软雅黑', sans-serif;
+  font-size: 625%;
+}
+body {
+  margin: 0 auto;
+}
+@media screen and (max-width: 719px) {
+  html {
+    font-size: 525%;
+  }
+}
+@media screen and (max-width: 639px) {
+  html {
+    font-size: 425%;
+  }
+}
+@media screen and (max-width: 479px) {
+  html {
+    font-size: 325%;
+  }
+}
+/*----总体样式结束---------------------------------------------------------------------------*/
+.header-bg,
+.nav,
+.page2Main,
+.footer {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap {
+  margin: 0 auto;
+  color: #999;
+}
+.header {
+  background: url("../images/page2-header-bg.png") repeat center;
+  overflow: hidden;
+}
+.header h1 {
+  font-size: 0.35rem;
+  padding: 0.25rem 0 0.1rem;
+  color: #D1EEEE;
+}
+.hello {
+  float: left;
+  margin-left: 10%;
+}
+.welcome {
+  float: right;
+  margin-right: 10%;
+}
+/*----header结束---------------------------------------------------------------------------*/
+.nav {
+  font-size: 0.18rem;
+  clear: both;
+}
+.nav ul {
+  padding-left: 10%;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 0.15rem 0;
+}
+.nav ul li a {
+  display: inline-block;
+  padding: 0 0.25rem;
+  font-weight: 600;
+  border-right: 1px solid #999;
+}
+.nav li.last a {
+  border-right: none;
+}
+.nav ul li a:hover {
+  color: #fff !important;
+}
+.nav a.first {
+  padding-left: 0;
+}
+/*----nav结束---------------------------------------------------------------------------*/
+.main {
+  text-align: center;
+  margin-bottom: .3rem;
+  font-size: 0.2rem;
+}
+.main p,
+.main span {
+  font-size: 0.2rem;
+}
+.main h5 {
+  font-size: 0.3rem;
+}
+/*----main结束---------------------------------------------------------------------------*/
+.page2Main li {
+  margin: 0 10%;
+  padding: 0.1rem 0 0.3rem;
+  border-bottom: 3px double #333;
+}
+.page2Main li p {
+  line-height: 0.4rem;
+}
+.page2Main li span {
+  line-height: 0.15rem;
+  display: inline-block;
+}
+.page2Main li h5 {
+  padding: 0.2rem 0;
+}
+.page2Main li a {
+  border-bottom: 1px dotted #999;
+}
+.page2Main li.last {
+  border-bottom: none;
+}
+/*----page2Main结束---------------------------------------------------------------------------*/
+.footer {
+  width: 100%;
+  min-width: 320px;
+  padding: 0.12rem 0;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  background: url("../images/page2-header-bg.png") repeat center;
+}
+.footer li {
+  display: inline-block;
+  width: 1.15rem;
+}
+.important {
+  color: red;
+}
+.important:hover {
+  color: indianred !important;
+}
+@media screen and (max-width: 639px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+/*----footer结束---------------------------------------------------------------------------*/
+.page3Main h2 {
+  margin: 0 10%;
+  padding: 0.2rem 0 0.1rem;
+  border-bottom: 3px double #333;
+}
+.page3Main > ul {
+  padding: 0 10% 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.page3Main > ul > li {
+  display: inline-block;
+  margin: 0.1rem 0.11rem 0;
+  padding: 0.1rem 0;
+  width: 2.73rem;
+  border: 1px solid #999;
+}
+.page3Main > ul > li:hover {
+  border: 1px solid #333;
+  color: #333;
+}
+.page3Main > ul > li img {
+  width: 1rem;
+}
+.page3Main > ul > li span {
+  font-size: 0.12rem;
+}
+.page3Main > ul > li img.gulp {
+  width: 1rem;
+  height: 1rem;
+}
+.page3Main > ul > li div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+  text-align: justify;
+}
+.page3Main > ul > li div h6 {
+  padding: 1px 0;
+  font-size: 0.2rem;
+}
+.page3Main > ul > li div p {
+  padding: 5px 0;
+  font-size: 0.15rem;
+  line-height: 0.22rem;
+}
+.page3Main > ul > li div p.level {
+  height: 0.6rem;
+}
+.page3Main ul li ul li {
+  display: inline-block;
+  width: 0.15rem;
+  height: 0.15rem;
+  border: none;
+  background: url("../images/star4.png") no-repeat center;
+  background-size: cover;
+}
+.page3Main ul li ul li.good {
+  background: url("../images/star3.png") no-repeat center;
+  background-size: cover;
+}
+.page3Main ul.project {
+  display: block;
+}
+.page3Main ul.project li {
+  margin-bottom: 0.1rem;
+}
+.page3Main ul.project a {
+  display: inline-block;
+  text-align: center;
+}
+.page3Main ul.project div {
+  width: 85%;
+  margin: 0 auto;
+}
+.page3Main ul.project img {
+  width: 100%;
+  margin: 0.04rem 0;
+}
+.page3Main ul.project h6 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0.1rem 0;
+}
+.page3Main ul.project span {
+  display: inline-block;
+  margin: 0.04rem 0;
+  color: red;
+}
+.page3Main ul.project p {
+  margin: 0.04rem 0;
+}
+/*----page3结束---------------------------------------------------------------------------*/
+.page4Main {
+  width: 60%;
+  margin: 0 auto 0.45rem;
+  text-align: justify;
+}
+.page4Main h2 {
+  color: #666;
+  margin: 0.3rem 0 0.15rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.page4Main p {
+  margin: 0.2rem 0;
+  font-size: 0.16rem;
+  line-height: 0.25rem;
+  color: #999;
+}
+.page4Main p strong {
+  color: red;
+}
+/*----page4结束---------------------------------------------------------------------------*/
+.page5Main h2 {
+  margin: 0 10% 5px;
+  padding: 0.2rem 0 0.1rem;
+  border-bottom: 3px double #333;
+}
+.page5Main > ul {
+  padding: 0 10% 20px;
+  margin: 10px 0 10px;
+  text-align: left;
+}
+.page5Main ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0.13rem 0.13rem 0;
+  width: 2.72rem;
+  height: 1.5rem;
+  border: 1px solid #999;
+  vertical-align: middle;
+  background: grey;
+  color: #fff;
+  text-align: center;
+}
+.page5Main ul li span {
+  display: inline-block;
+  width: 92%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 0.14rem;
+  line-height: 0.25rem;
+  cursor: default;
+}
+.page5Main ul li span abbr {
+  border-bottom: 1px solid #fff;
+}
+.page5Main ul li:hover span {
+  font-size: 0.16rem;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+.page5Main ul li.index-old span {
+  color: #414;
+}
+@media screen and (max-width: 400px) {
+  .header h1 {
+    font-size: 0.3rem;
+  }
+  .page3Main > ul,
+  .page5Main ul {
+    text-align: center;
+  }
+  .page3Main > ul > li {
+    width: 3.5rem;
+    text-align: left;
+  }
+  .page3Main > ul > li img {
+    margin: 0 0.2rem;
+  }
+  .page3Main > ul > li div {
+    width: 1.8rem;
+  }
+  .page4Main {
+    width: 70%;
+  }
+  .page5Main ul li {
+    margin: 0.13rem 0.02rem 0;
+    width: 3.5rem;
+  }
+}
+/*----page5结束---------------------------------------------------------------------------*/
+#wrap3 {
+  display: none;
+  position: relative;
+  width: 4rem;
+  height: 1.2rem;
+  padding: 0.3rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: #aaa;
+}
+#wrap3 h3 {
+  margin: 0 0 0.2rem;
+  font-size: 0.2rem;
+  color: #fff;
+}
+#wrap3 .close {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: url("../images/close2.png");
+  border: 1px solid #737373;
+  background-size: 100%;
+}
+#wrap3 .close:hover {
+  border: 1px solid #aaa;
+}
+#wrap3 P {
+  font-size: 0.14rem;
+  line-height: 0.3rem;
+}
+#wrap3 P span.left {
+  display: inline-block;
+  width: 0.55rem;
+}
+#wrap3 img {
+  width: 1rem;
+  position: absolute;
+  right: 12%;
+  top: 30%;
+}

@@ -1,0 +1,405 @@
+.loader {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  background: #Fff;
+}
+.loader img {
+  width: 50%;
+}
+.peWrap .sectionIntro {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #951d22;
+}
+.peWrap .sectionIntro .sectionIntro-title {
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #a7a7a7;
+}
+.peWrap .sectionIntro .sectionIntro-title p {
+  font-family: "Arial Black", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+.peWrap .sectionIntro a {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #a7a7a7;
+}
+.peWrap .sectionIntro a img {
+  vertical-align: text-bottom;
+}
+.peWrap #myCarousel,
+.peWrap #myCarousel2 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.peWrap #myCarousel,
+.peWrap #myCarousel2,
+.peWrap #myCarousel .item,
+.peWrap #myCarousel2 .item {
+  max-height: 800px;
+}
+.peWrap #myCarousel .carousel-control,
+.peWrap #myCarousel2 .carousel-control {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-size: 4rem;
+}
+.peWrap #myCarousel img {
+  width: 100%;
+}
+.peWrap #myCarousel2 .carousel-control {
+  width: 5%;
+  min-width: 20px;
+  color: #bfbfbf;
+  background: #fff;
+}
+.peWrap .affix {
+  top: 0;
+}
+.peWrap #case .caseList {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+.peWrap #case .caseList .items-nav {
+  width: 100%;
+  text-align: center;
+}
+.peWrap #case .caseList .items-nav li {
+  display: inline-block;
+  margin: 0 15px 20px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 5px;
+}
+.peWrap #case .caseList .items-nav li a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+.peWrap #case .caseList .items-nav .active,
+.peWrap #case .caseList .items-nav li:hover {
+  background: #666;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+.peWrap #case .caseList .items-nav .active a,
+.peWrap #case .caseList .items-nav li:hover a {
+  color: #fff;
+}
+.peWrap #joinUs .joinUs-text {
+  margin-bottom: 50px;
+  color: #272525;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+.peWrap #joinUs .joinUs-text .joinUs-text-bottom {
+  margin-top: 40px;
+  color: #951d22;
+}
+.peWrap #joinUs .joinUs-content i {
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background: url('../img/background/joinUs-content-bg.png') no-repeat;
+  cursor: pointer;
+}
+.peWrap #joinUs .joinUs-content i.market {
+  background-position: 0 0;
+}
+.peWrap #joinUs .joinUs-content i.market:hover {
+  background-position: 0 100%;
+}
+.peWrap #joinUs .joinUs-content i.market:hover + h3 {
+  color: #951d22;
+}
+.peWrap #joinUs .joinUs-content i.intelligence {
+  background-position: 25% 0;
+}
+.peWrap #joinUs .joinUs-content i.intelligence:hover {
+  background-position: 25% 100%;
+}
+.peWrap #joinUs .joinUs-content i.intelligence:hover + h3 {
+  color: #951d22;
+}
+.peWrap #joinUs .joinUs-content i.industry {
+  background-position: 50% 0;
+}
+.peWrap #joinUs .joinUs-content i.industry:hover {
+  background-position: 50% 100%;
+}
+.peWrap #joinUs .joinUs-content i.industry:hover + h3 {
+  color: #951d22;
+}
+.peWrap #joinUs .joinUs-content i.machining {
+  background-position: 75% 0;
+}
+.peWrap #joinUs .joinUs-content i.machining:hover {
+  background-position: 75% 100%;
+}
+.peWrap #joinUs .joinUs-content i.machining:hover + h3 {
+  color: #951d22;
+}
+.peWrap #joinUs .joinUs-content i.cooperate {
+  background-position: 100% 0;
+}
+.peWrap #joinUs .joinUs-content i.cooperate:hover {
+  background-position: 100% 100%;
+}
+.peWrap #joinUs .joinUs-content i.cooperate:hover + h3 {
+  color: #951d22;
+}
+.peWrap #joinUs .joinUs-content .content-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.peWrap #joinUs .joinUs-content h3 {
+  margin: 16px 0 12px;
+  color: #272525;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.peWrap #joinUs .joinUs-content p {
+  color: #c3c3c3;
+  text-align: justify;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+@media (max-width: 768px) {
+  .peWrap #joinUs .joinUs-content p {
+    text-align: center;
+  }
+}
+.peWrap #about-PE .aboutPEImage {
+  margin-bottom: 50px;
+  color: #272525;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: center;
+}
+.peWrap #about-PE .aboutPE-content {
+  margin-bottom: 70px;
+}
+.peWrap #about-PE .aboutPE-content .content-item {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  min-width: 200px;
+}
+.peWrap #about-PE .aboutPE-content .content-item i {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: url('../img/background/aboutPE-content-bg.png') no-repeat;
+}
+.peWrap #about-PE .aboutPE-content .content-item i.firstIcon {
+  background-position: 0 0;
+}
+.peWrap #about-PE .aboutPE-content .content-item i.secondIcon {
+  background-position: 33.3% 0;
+}
+.peWrap #about-PE .aboutPE-content .content-item i.thirdIcon {
+  background-position: 66.6% 0;
+}
+.peWrap #about-PE .aboutPE-content .content-item i.fourthIcon {
+  background-position: 100% 0;
+}
+.peWrap #about-PE .aboutPE-content .content-item .content-item-text {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-left: 25px;
+  width: 120px;
+  text-align: justify;
+}
+.peWrap #about-PE .aboutPE-content .content-item .content-item-text h3 {
+  margin-bottom: 10px;
+  color: #951d22;
+  font-size: 20px;
+  font-size: 2rem;
+}
+.peWrap #about-PE .aboutPE-content .content-item .content-item-text p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.peWrap #about-PE .aboutPE-customer {
+  margin-bottom: 20px;
+}
+.peWrap #about-PE .aboutPE-customer h3 {
+  margin-bottom: 20px;
+  color: #951d22;
+  font-size: 20px;
+  font-size: 2rem;
+}
+.peWrap #about-PE .aboutPE-customer .myTable {
+  margin: 0 auto;
+  width: 85%;
+  background: #fff;
+}
+.peWrap #about-PE .aboutPE-customer .myTable td {
+  text-align: center;
+  border: 1px solid #bfbfbf;
+}
+.peWrap #about-PE .aboutPE-customer .myTable td img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.peWrap #about-PE .aboutPE-customer .myTable td:hover img {
+  filter: none;
+  -webkit-filter: none;
+  transition: 0.3s all ease-in;
+}
+.peWrap #contactUs {
+  position: relative;
+}
+.peWrap #contactUs .contactUs-content {
+  margin-top: 20px;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail {
+  margin-bottom: 40px;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail h3 {
+  color: #951d22;
+  font-size: 20px;
+  font-size: 2.0rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .peWrap #contactUs .contactUs-content .contactUs-detail h3 {
+    color: #951d22;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactUs-detail-wrap {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .qrCode {
+  margin-top: 40px;
+  text-align: center;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .qrCode img {
+  border: 1px solid #f2f2f2;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .qrCode p {
+  margin-top: 10px;
+  color: #000;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  color: #272525;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li span {
+  width: 85%;
+  margin-left: 10px;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li span a {
+  text-decoration: none;
+  color: #272525;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li.phone i {
+  background: url('../img/background/contactWay-bg_phone.png') no-repeat;
+  background-size: cover;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li.email i {
+  background: url('../img/background/contactWay-bg_email.png') no-repeat;
+  background-size: cover;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li.address i {
+  background: url('../img/background/contactWay-bg_address.png') no-repeat;
+  background-size: cover;
+}
+.peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li.website i {
+  background: url('../img/background/contactWay-bg_website.png') no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .peWrap #contactUs .contactUs-content .contactUs-detail .contactWay li i {
+    width: 18px;
+    height: 18px;
+  }
+}
+.peWrap #contactUs .contactUs-content .contactUs-map {
+  margin-bottom: 120px;
+  background: url('../img/background/loading.gif') no-repeat center center;
+}
+.peWrap #contactUs .contactUs-content .contactUs-map label,
+.peWrap #contactUs .contactUs-content .contactUs-map img {
+  max-width: none;
+}
+.peWrap .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.peWrap .footer span {
+  display: inline-block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin: 3px 0;
+}
+.peWrap .footer span.backupNo {
+  margin: 0 5px;
+}

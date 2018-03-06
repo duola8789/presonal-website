@@ -1,0 +1,29 @@
+#casePage #myHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#casePage #case .caseList {
+  margin-bottom: 20px;
+}
+#casePage #case .caseList .items-nav {
+  width: 100%;
+  text-align: center;
+}
+#casePage #case .caseList .items-nav li {
+  display: inline-block;
+  margin: 0 15px 20px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 5px;
+  color: #a7a7a7;
+}
+#casePage #case .caseList .items-nav .active,
+#casePage #case .caseList .items-nav li:hover {
+  color: #fff;
+  background: #666;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
