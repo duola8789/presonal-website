@@ -24,6 +24,7 @@ $(function () {
     $rightDiv2 = $("#right2"),//整版3-2
     $right2Ul = $("#right2Ul"),//3-2中的skill列表
     $right2Li = $right2Ul.children("Li"),//skill列表中每一项
+    $skillDescribe = $('.skillDescribe'),
     /*整版3-3中的变量----------------------------------*/
     $rightDiv3 = $("#right3"),//整版3-3，
     $right3Ul = $("#right3Ul"),//3-3中的对应project列表
@@ -44,6 +45,17 @@ $(function () {
     $right2Li.height($right2Li.width());
     $right3Li.height($right3Li.width());
     $right6Li.height($right6Li.width());
+    if ($right2Li.width() < 150) {
+      $skillDescribe.hide();
+      $right6Li.find('span').css({
+        'fontSize': '12px'
+      })
+    } else {
+      $skillDescribe.show();
+      $right6Li.find('span').css({
+        'fontSize': '14px'
+      })
+    }
   }).resize();
   /*3-2和3-3布局结束----------------------------------*/
 
@@ -179,7 +191,18 @@ $(function () {
   /*点击3-3中列表弹出3-4中的iframe-*/
   $right3LiA.not(":last").click(function () {
     var aHref = this.href;
-    $("#right4Iframe").attr("src", aHref);
+    if ($(this).data('src')) {
+      var imageScr = '../dist/images/' + $(this).data('src');
+    }
+
+    if (aHref) {
+      $("#right4Iframe").attr("src", aHref).show();
+      $("#projectImage").hide()
+    } else {
+      $("#projectImage").attr("src", imageScr).show();
+      $("#right4Iframe").hide();
+    }
+
     $rightDiv4.fadeIn()
       .css("visibility", "visible")//由于jQuery无法获取display:none的高度，CSS中设置了visibility: hidden;
       .siblings()
@@ -232,5 +255,4 @@ $(function () {
   $("#contact").click(function () {
     $("#wrap3").modal();
   });
-
 });

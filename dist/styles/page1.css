@@ -27,7 +27,7 @@ button {
   outline: none;
 }
 .invalid {
-  border: 1pc solid #737373 !important;
+  border: 1px solid #737373 !important;
   background-color: #000;
   opacity: 0.3;
 }
@@ -205,7 +205,7 @@ footer #contact {
   overflow: hidden;
 }
 #wrap2 #right1 ul#rightUl {
-  width: 2500px;
+  width: 3400px;
   height: 100%;
   text-align: center;
   position: relative;
@@ -299,35 +299,49 @@ footer #contact {
   flex-wrap: wrap;
 }
 .rightShow .rightShowUl li {
-  width: 24.8%;
+  box-sizing: border-box;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  border-right: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+  border-right: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+}
+.rightShow .rightShowUl > li:nth-child(4n+4) {
+  border-right: none;
+  border-bottom: 2px solid #e1e1e1;
 }
 .rightShow .rightShowUl li a {
-  width: 95%;
-  height: 95%;
-  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
   border: 4px solid #fff;
-  transition: border 0.5s ease-out;
-  -webkit-transition: border 0.5s ease-out;
+  transition: border 0.3s ease-in-out;
+  -webkit-transition: border 0.3s ease-in-out;
+  text-align: center;
 }
 .rightShow .rightShowUl li a:hover {
   border: 4px solid #e1e1e1;
   cursor: default;
 }
-.rightShow .rightShowUl li a span {
+.rightShow .skillDescribe {
   display: inline-block;
-  margin-top: 65%;
+  margin-top: 60%;
+  width: 90%;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: justify;
 }
 .rightShow .rightShowUl li ul {
   width: 100px;
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 85%;
   transform: translateX(-50%);
   text-align: center;
 }
@@ -343,95 +357,86 @@ footer #contact {
   background: url("../images/star1.png") no-repeat center;
   background-size: cover;
 }
-#right2Ul > li:first-child {
-  background: url("../images/html.png") no-repeat center 15%;
+.skill_html {
+  background: url("../images/html.png") no-repeat center 10%;
   background-size: 50%;
 }
-#right2Ul > li:nth-child(2) {
-  background: url("../images/css.png") no-repeat center 15%;
+.skill_css {
+  background: url("../images/css.png") no-repeat center 10%;
   background-size: 50%;
 }
-#right2Ul > li:nth-child(3) {
-  background: url("../images/js.png") no-repeat center 22%;
+.skill_js {
+  background: url("../images/js.png") no-repeat center 10%;
   background-size: 50%;
 }
-#right2Ul > li:nth-child(4) {
-  background: url("../images/jquery.png") no-repeat center 15%;
+.skill_jquery {
+  background: url("../images/jquery.jpg") no-repeat center 25%;
+  background-size: 80%;
+}
+.skill_react {
+  background: url("../images/react.png") no-repeat center 10%;
   background-size: 50%;
 }
-#right2Ul > li:nth-child(5) {
-  background: url("../images/bootstrap.png") no-repeat center 15%;
+.skill_vue {
+  background: url("../images/vue.png") no-repeat center 10%;
   background-size: 50%;
 }
-#right2Ul > li:nth-child(6) {
-  background: url("../images/less.png") no-repeat center 30%;
+.skill_ractive {
+  background: url("../images/ractive.png") no-repeat center 10%;
   background-size: 50%;
 }
-#right2Ul > li:nth-child(7) {
-  background: url("../images/gulp.png") no-repeat center 10%;
-  background-size: 25%;
+.skill_bootstrap {
+  background: url("../images/bootstrap.png") no-repeat center 0;
+  background-size: 60%;
 }
-#right2Ul > li:nth-child(8) {
-  background: url("../images/nginx.png") no-repeat center 15%;
-  background-size: 50%;
+.skill_more {
+  background: url("../images/more.jpg") no-repeat center 25%;
+  background-size: 80%;
 }
-#right2Ul > li:nth-child(9) {
-  background: url("../images/node.png") no-repeat center 15%;
-  background-size: 50%;
+.skill_english {
+  background: url("../images/english.png") no-repeat center 20%;
+  background-size: 40%;
 }
-#right2Ul > li:nth-child(10) {
-  background: url("../images/angular.png") no-repeat center 15%;
-  background-size: 50%;
+#right3Ul > li .project_tag {
+  display: inline-block;
+  margin-top: 56%;
+  width: 90%;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
-#right2Ul > li:nth-child(11) {
-  background: url("../images/vue.png") no-repeat center 15%;
-  background-size: 50%;
+#right3Ul > li .project_info {
+  display: inline-block;
+  margin-top: 0;
+  width: 90%;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: justify;
 }
-#right2Ul > li:nth-child(12) {
-  background: url("../images/react.png") no-repeat center 15%;
-  background-size: 50%;
+.project_exam {
+  background: url("../images/exam.png") no-repeat center 10%;
+  background-size: 140px;
 }
-#right3Ul > li:first-child {
-  background: url("../images/project1.png") no-repeat center 25%;
-  background-size: 150px;
+.project_tutor {
+  background: url("../images/tutor.jpg") no-repeat center 10%;
+  background-size: 140px;
 }
-#right3Ul > li:nth-child(2) {
-  background: url("../images/project2.jpg") no-repeat center 25%;
-  background-size: 150px;
+.project_website {
+  background: url("../images/website.jpg") no-repeat center 10%;
+  background-size: 140px;
 }
-#right3Ul > li:nth-child(3) {
-  background: url("../images/project3.jpg") no-repeat center 25%;
-  background-size: 150px;
+.project_pe {
+  background: url("../images/pe.jpg") no-repeat center 10%;
+  background-size: 140px;
 }
-#right3Ul > li:nth-child(4) {
-  background: url("../images/project4.jpg") no-repeat center 25%;
-  background-size: 150px;
+.project_homepage {
+  background: url("../images/homepage.jpg") no-repeat center 10%;
+  background-size: 140px;
 }
-#right3Ul > li:nth-child(5) {
-  background: url("../images/project5.jpg") no-repeat center 20%;
-  background-size: 60px;
-}
-#right3Ul > li:nth-child(5) span {
-  margin-top: 80%;
-}
-#right3Ul > li:nth-child(6) {
-  background: url("../images/project6.jpg") no-repeat center 20%;
-  background-size: 60px;
-}
-#right3Ul > li:nth-child(6) span {
-  margin-top: 75%;
-}
-#right3Ul > li:nth-child(7) {
-  background: url("../images/project7.jpg") no-repeat center 25%;
-  background-size: 150px;
-}
-#right3Ul > li:nth-child(8) {
+.project_more {
   background: url("../images/continued.jpg") no-repeat center;
   background-size: 300px;
-}
-#right3Ul > li:nth-child(8) a:hover {
-  cursor: default;
-  border: none;
 }
 #right3Ul > li a:hover {
   cursor: pointer;
@@ -448,10 +453,15 @@ footer #contact {
   height: 100%;
   float: left;
   position: relative;
+  text-align: center;
 }
 #right4 iframe {
   width: 100%;
   height: 100%;
+}
+.project_image {
+  width: 96%;
+  margin-top: 14%;
 }
 button.close {
   position: absolute;
@@ -468,8 +478,9 @@ button.close:hover {
   border: 1px solid #aaa;
 }
 #right5 {
+  box-sizing: border-box;
   display: none;
-  padding: 40px 0;
+  padding: 20px 0;
   width: 50%;
   height: 100%;
   float: left;
@@ -477,11 +488,12 @@ button.close:hover {
   background: url("../images/bg.jpg") no-repeat center;
   background-size: cover;
   color: #dfdfdf;
+  overflow-y: auto;
 }
 #right5 p {
   display: none;
   padding: 0 40px;
-  margin: 30px 0;
+  margin: 20px 0;
   font-size: 16px;
   line-height: 22px;
   color: #999;
@@ -496,14 +508,14 @@ button.close:hover {
 }
 #right6 a {
   border: none;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s;
 }
 #right6 a:hover {
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
   border: none;
 }
 #right6 span {
