@@ -132,7 +132,7 @@ body {
 .nav li.last a {
   border-right: none;
 }
-.nav ul li a:hover {
+.nav ul li a:hover, .current {
   color: #fff !important;
 }
 .nav a.first {

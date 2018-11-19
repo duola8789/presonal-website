@@ -142,7 +142,7 @@
 #wrap3 .close {
   width: 25px;
   height: 25px;
-  background: url("../../images/close2.png") no-repeat center;
+  background: url("/../images/close2.png") no-repeat center;
   border: none;
 }
 #wrap3 P {
