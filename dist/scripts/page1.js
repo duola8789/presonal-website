@@ -40,22 +40,25 @@ $(function () {
     $right6Li = $right6Ul.children("Li");//更多列表中每一项
   /*变量声明结束--------------------------------------------------------------------------------*/
 
+  var $graduateYear = $("#graduateYear"); // 毕业年限
+  var $changeYear = $("#changeYear"); // 转行年限
+  $graduateYear.text(new Date().getFullYear() - 2013);
+  $changeYear.text(new Date().getFullYear() - 2017);
+
   /*3-2和3-3和3-6布局开始----------------------------------*/
-  $(window).resize(function () {
+  function resize2li () {
     $right2Li.height($right2Li.width());
     $right3Li.height($right3Li.width());
     $right6Li.height($right6Li.width());
     if ($right2Li.width() < 150) {
       $skillDescribe.hide();
-      $right6Li.find('span').css({
-        'fontSize': '12px'
-      })
     } else {
       $skillDescribe.show();
-      $right6Li.find('span').css({
-        'fontSize': '14px'
-      })
     }
+  }
+
+  $(window).resize(function () {
+    resize2li()
   }).resize();
   /*3-2和3-3布局结束----------------------------------*/
 
@@ -167,6 +170,7 @@ $(function () {
     $("#skillBtn").addClass("skillClicked")//2-2-1出现被点击后的CSS样式类
       .siblings()
       .removeClass("projectClicked");//2-2-2删除被点击后的CSS样式类
+    resize2li()
   });
   /*点击2-2-1出现3-2-------------*/
   $("#skillBtn").click(function () {
@@ -185,6 +189,7 @@ $(function () {
     $(this).addClass("projectClicked")//2-2-2出现被点击后的CSS样式类
       .siblings()
       .removeClass("skillClicked");//2-2-1删除被点击后的CSS样式类
+    resize2li()
   });
   /*点击出现3-2和3-3结束--------------------------------------------------------------------------------*/
 
@@ -218,6 +223,7 @@ $(function () {
       .siblings()
       .not("#left")
       .fadeOut();
+    resize2li()
   });
 
   /*点击2-3出现3-5-------------*/
@@ -251,6 +257,7 @@ $(function () {
       .siblings()
       .find("a")
       .removeClass("aShowing");//2-*删除被点击后的CSS类
+    resize2li()
   });
   $("#contact").click(function () {
     $("#wrap3").modal();

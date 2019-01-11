@@ -33,6 +33,7 @@
 <body>
 <div id="wrap1">
   <h1>莫负好时光</h1>
+  <p class="intro">多少遗憾自负存念想 唯有时间不可挡</p>
 </div>
 <div id="wrap2">
   <div id="left">
@@ -56,8 +57,9 @@
         <li><a href="http://blog.csdn.net/duola8789">CSDN</a></li>
         <li><a href="https://github.com/duola8789">GitHub</a></li>
         <li><a href="http://weibo.com/zhouhaozhouhao?refer_flag=1001030201&is_hot=1">Weibo</a></li>
+        <li><a id="blog" href="http://duola8789.github.io">Blog</a></li>
         <li><a id="contact">Contact Me</a></li>
-        <li><a id="resume" href="../dist/files/resume.pdf" download="周昊的简历.pdf">Resume</a></li>
+        <!--<li><a id="resume" href="../dist/files/resume.pdf" download="周昊的简历.pdf">Resume</a></li>-->
       </ul>
     </footer>
   </div>
@@ -65,63 +67,60 @@
     <div id="outer">
       <ul id="rightUl">
         <li class="page1">
-          <p>Living In Beijing</p>
-          <p>Working In Beijing</p>
-          <p>Struggling In Beijing</p>
+          <p>想避世</p>
+          <p>更要在世上</p>
         </li>
         <li class="page2">
           <h5>个人信息</h5>
           <p>我叫周昊，常住北京</p>
           <p>曾经是一名电子产品结构工程师</p>
           <p>厌烦了国企无所事事的生活</p>
-          <p>转行成为了一名前端工程师</p>
+          <p>30岁时，转行成为了一名前端工程师</p>
         </li>
         <li class="page3">
           <h5>教育背景</h5>
-          <p>本科和研究生都毕业于<a title="一所位于北京的著名211大学" href="http://baike.baidu.com/item/北京科技大学" target="_blank">北京科技大学</a>
+          <p>本科和研究生都毕业于<a title="一所位于北京的211大学" href="http://baike.baidu.com/item/北京科技大学" target="_blank">北京科技大学</a>
           </p>
-          <p>学习的专业是机械工程及自动化，成绩优秀</p>
+          <p>学习的专业是机械工程及自动化</p>
         </li>
         <li class="page4">
           <h5>教育背景</h5>
-          <p>本科毕业设计使用<a href="http://baike.baidu.com/item/matlab" title="MATLAB语言基于C++语言基础上" target="_blank"><!--
-                    -->MATLAB</a>编程<br>对机电传动系统的反馈控制进行数值模拟</p>
-          <p>硕士毕业设计使用<a href="http://baike.baidu.com/item/FORTRAN语言" title="第一种高级编程语言" target="_blank"><!--
-                        -->fortune</a><br>编写有限元软件的子程序，模拟材料相变过程</p>
+          <p>转眼，已经毕业<span id="graduateYear"></span>年了</p>
+          <p>还是没有混出什么名堂</p>
         </li>
         <li class="page5">
           <h5>工作经历</h5>
           <p class="duration">2013.04-2017.03</p>
           <p>毕业后就职于<a href="http://baike.baidu.com/item/大唐电信科技产业集团" title="一个主要从事通信业务的央企" target="_blank">大唐电信集团</a></p>
-          <p>担任电子产品<a href="http://baike.baidu.com/item/产品结构工程师" title="类似工业设计" target="_blank">结构工程师</a>职务</p>
+          <p>成为了一名电子产品<a href="http://baike.baidu.com/item/产品结构工程师" title="类似工业设计" target="_blank">结构工程师</a></p>
           <p>负责军用、民用电子通信产品的结构设计工作</p>
         </li>
         <li class="page5">
           <h5>工作经历</h5>
           <p>2017.03-2018.03</p>
-          <p>成功转行，就职于<a
+          <p>幸运的转行成为了一名前端工程师</p>
+          <p>在<a
             href="https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E7%AE%80%E5%8D%95%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
             title="一家互联网教育企业" target="_blank">北京简单科技有限公司</a></p>
-          <p>担任前端工程师</p>
-          <p>负责<a href="http://www.jianjiaolian.com/">教练伴学</a>、<a href="http://www.jd100.com/">简单学习网</a>等多个产品的前端开发工作</p>
+          <p>负责<a href="http://www.jianjiaolian.com/">教练伴学</a>等多个产品的前端开发工作</p>
         </li>
         <li class="page5">
           <h5>工作经历</h5>
           <p>2018.03-NOW</p>
-          <p>即将入职<a href="http://tech.lede.com/" target="_blank">网易乐得科技有限公司</a></p>
-          <p>担任前端工程师</p>
+          <p>在<a href="http://tech.lede.com/" target="_blank">网易乐得科技有限公司</a></p>
+          <p>担任高级前端工程师</p>
         </li>
         <li class="page6">
           <h5>目前状态</h5>
-          <p>在国企时，反感国企的僵硬、懒散和不公平，不想继续混下去</p>
-          <p>很感谢简单科技给我的机会，让我能够收到锻炼</p>
-          <p>马上去网易入职，会有压力，当然也是动力</p>
+          <p>转行<span id="changeYear"></span>年</p>
+          <p>经历了两家公司</p>
+          <p>有进步，但是也在不断的怀疑自己</p>
         </li>
         <li class="page7">
-          <h5>转行之路</h5>
-          <p>其实也没有想到能够转行成功</p>
-          <p>只是不想自己后悔</p>
-          <p>自己选的路，好好走下去</p>
+          <h5>未来的路</h5>
+          <p>一直很焦虑</p>
+          <p>不知道未来会怎样</p>
+          <p>做好自己能做的，其他的让时间给出答案吧</p>
         </li>
       </ul>
     </div>
@@ -145,7 +144,7 @@
     <ul id="right2Ul" class="rightShowUl">
       <li class="skill_html">
         <a title="HTML:熟练编写符合W3C规范的页面，关注页面细节">
-          <span class="skillDescribe">熟练编写符合W3C规范的页面，关注页面细节</span>
+          <span class="skillDescribe">基本功还算扎实，力求高精度的还原设计稿</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -157,7 +156,7 @@
       </li>
       <li class="skill_css">
         <a title="CSS3:掌握并乐于不断学习新特性，能够使用LESS编写样式">
-          <span class="skillDescribe">掌握并乐于不断学习新特性，能够使用LESS</span>
+          <span class="skillDescribe">基本功还算扎实，力求高精度的还原设计稿</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -169,7 +168,7 @@
       </li>
       <li class="skill_js">
         <a title="JavaScript:了解ES6/ES7标准，力求编写高效代码，注重代码优化">
-          <span class="skillDescribe">了解ES6标准，编写高效代码，注重代码优化</span>
+          <span class="skillDescribe">努力让自己的代码有更好的可扩展性和可读性</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -181,7 +180,7 @@
       </li>
       <li class="skill_jquery">
         <a title="jQuery:熟练操作DOM，实现页面交互">
-          <span class="skillDescribe">熟练操作DOM，实现页面交互</span>
+          <span class="skillDescribe">前些年的前端利器，逐渐退出历史舞台，用的少了</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -193,19 +192,19 @@
       </li>
       <li class="skill_react">
         <a title="React+MOBX:熟练编写可复用的组件，配合使用MOBX进行状态管理，开发单页面应用">
-          <span class="skillDescribe">熟练编写可复用组件，使用MOBX进行状态管理</span>
+          <span class="skillDescribe">用React+Mobx独立开发过一个项目，踩过一些坑</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
             <li class="good"></li>
-            <li></li>
+            <li class="good"></li>
             <li></li>
           </ul>
         </a>
       </li>
       <li class="skill_vue">
         <a title="Vue:熟练运用，高效开发单页面应用">
-          <span class="skillDescribe">熟练运用，高效开发单页面应用</span>
+          <span class="skillDescribe">最近的项目都是使用Vue，还算比较熟练</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -217,7 +216,7 @@
       </li>
       <li class="skill_ractive">
         <a title="Ractive: 熟练编写模版，进行双向绑定数据，由数据层驱动页面状态">
-          <span class="skillDescribe">熟练编写模版，双向绑定数据，数据驱动页面</span>
+          <span class="skillDescribe">一个小众的前端框架，用过一段时间，锻炼了MVVM的开发思想</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -229,7 +228,7 @@
       </li>
       <li class="skill_bootstrap">
         <a title="Bootstrap:熟练运用，高效开发响应式页面">
-          <span class="skillDescribe">熟练运用，高效开发响应式页面</span>
+          <span class="skillDescribe">用过一段时间，现在也不怎么用了</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -241,7 +240,7 @@
       </li>
       <li class="skill_more">
         <a title="More:掌握webpack、Git、lodash、Postman等工具的基本使用">
-          <span class="skillDescribe">掌握webpack、lodash、Postman等基本使用</span>
+          <span class="skillDescribe">常规的工具都有所了解，比如Webpack/Jest/Vue-Cli等</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -253,7 +252,7 @@
       </li>
       <li class="skill_english">
         <a title="英语:大学英语六级，通过剑桥国际商务英语中级考试，可流畅查阅英文资料。">
-          <span class="skillDescribe">英语六级，可流畅查阅英文资料。</span>
+          <span class="skillDescribe">大学英语过了六级，读写水平还可以</span>
           <ul>
             <li class="good"></li>
             <li class="good"></li>
@@ -267,34 +266,52 @@
   </div>
   <div id="right3" class="rightShow">
     <ul id="right3Ul" class="rightShowUl">
+      <li class="project_CRM">
+        <a title="易龙智投CRM系统" data-src="CRM.png">
+          <span class="project_tag">Vue+ElementUI</span>
+          <span class="project_info">CRM：用Vue开发的、多权限、大型的客户关系管理应用</span>
+        </a>
+      </li>
+      <li class="project_wordcup">
+        <a title="球约世界杯微信小程序" data-src="wordcup.png">
+          <span class="project_tag">mpVue</span>
+          <span class="project_info">球约世界杯：用mpVue开发的微信小程序，在2018世界杯期间上线</span>
+        </a>
+      </li>
       <li class="project_exam">
         <a title="测评公共平台" data-src="exam.png">
           <span class="project_tag">React + MOBX</span>
-          <span class="project_info">使用React编写页面，MOBX管理状态，实现学生答题，教师判卷等功能</span>
+          <span class="project_info">测评系统：独立开发的一个React项目</span>
         </a>
       </li>
       <li class="project_tutor">
-        <a title="教练伴学”在线教学客户端软件" data-src="tutor.jpg">
+        <a title="教练伴学在线教学客户端软件" data-src="tutor.jpg">
           <span class="project_tag">Ractive+Bootstrap+JQ</span>
-          <span class="project_info">使用Ractive绑定数据，数据驱动页面，实现复杂的业务逻辑</span>
+          <span class="project_info">教练伴学：比较复杂的一个桌面应用，内嵌Web页面实现复杂功能</span>
         </a>
       </li>
       <li class="project_website">
         <a title="简单学习网" href="http://www.jd100.com">
           <span class="project_tag">JS+CSS+jQuery</span>
-          <span class="project_info">精准还原UI设计稿，合理优化代码，快速编写符合规范的页面</span>
+          <span class="project_info">简单学习网：写过一些移动端和PC端的落地页</span>
         </a>
       </li>
       <li class="project_pe">
         <a title="品意工业设计有限公司网站" href="../pages/pe-idea/index.html">
           <span class="project_tag">Bootstrap+jQuery</span>
-          <span class="project_info">实现响应式布局，使用jQuery及插件实现动画、瀑布式布局等效果</span>
+          <span class="project_info">响应式网站：用BootStrap完成的响应式网站，用Koa+MySQL开发了简单的后台系统</span>
         </a>
       </li>
       <li class="project_homepage">
         <a title="个人网站" data-src="homepage.jpg">
           <span class="project_tag">HTML+CSS+jQuery</span>
-          <span class="project_info">完成PC端和移动端自适应网站的建立，使用CSS3实现页面显示效果</span>
+          <span class="project_info">个人网站：就是这个网站，早期弄的一个静态页面，前一段又用Hexo搭了博客</span>
+        </a>
+      </li>
+      <li class="project_wechat">
+        <a title="微信公众号" data-src="wechat-qcode.jpg">
+          <span class="project_tag">微信公众号</span>
+          <span class="project_info">弄了一个自己的微信公众号，发一些自己的博客文章，没什么人关注</span>
         </a>
       </li>
       <li class="project_more">
@@ -308,31 +325,30 @@
     <button type="button" id="right4Btn" class="close"></button>
   </div>
   <div id="right5">
-    <p>决心转行快1年，这一年，除了部分特殊情况，每天下了班的晚上和周末的时间，都用来学习。</p>
-    <p>学习到现在很矛盾，既有成就感，感觉自己掌握了很多东西，而且在学习的时候乐在其中，又很焦虑，因为前端的千变万化，新的框架层出<!--
+    <p>做出转行的决定，不知道是对是错</p>
+    <p>将自己的轨迹强行换到另外一条道路，到现在很矛盾，既有成就感，感觉自己掌握了很多东西，而且在学习的时候乐在其中，又很焦虑，因为前端的千变万化，新的框架层出<!--
         -->不穷，版本升级绵延不绝。</p>
     <p>痛并快乐着。</p>
     <p>由于有了几年的工作经历，我知道学习和实际工作之间的差别。所以在自学过程中非常注意从实际项目的角度出发，在网上寻找、通过<!--
         -->论坛发问，实际的工作过程是怎样的，将实际的工作能力提高。</p>
-    <p>对自己学习到现在的评价是：<strong>能够独立开展前端开发工作。</strong></p>
     <p class="myWords">转行最难的一是坚持，二是得不到认可。<br>
-      我坚持到了现在，下一步呢就是坚持下去，<strong>坚持</strong>到得到<strong>认可</strong>。<em>（2016.12.05）</em></p>
+      我坚持到了现在，下一步呢就是坚持下去，<strong>坚持</strong>到得到认可。<em>（2016.12.05）</em></p>
     <p>一年多了，在简单科技这一年我充满感激。能够转行成功有自己的努力，也有运气使然。明天就要去网易入职，不知道大公司会是什么样子，不知道未来<!--
-      -->是什么样子，可以预见的只有自己还有很多东西要学，很长的路要走。</p>
-    <p>继续坚持下去吧。<em>（2018.03.07）</em></p>
+      -->是什么样子，可以预见的只有自己还有很多东西要学，很长的路要走。继续坚持下去吧。<em>（2018.03.07）</em></p>
+    <p>这一年，尤其是最近几个月，焦虑更加严重了。互联网经济寒冬，公司业务的停滞，几次面试的失败，年龄的增大，让我的焦虑与日俱增。我总是觉得<!--
+      -->自己的时间宝贵，因为转行让我的前些年的时间全部白费，所以我渴望快速的成长。但是到现在，成长的速度赶不上年龄和外界对你的要求的增长<!--
+      -->速度。不知道未来会怎样，不知道下一站在哪里。<em>（2019.01.11）</em></p>
   </div>
   <div id="right6" class="rightShow">
     <ul id="right6Ul" class="rightShowUl">
       <li><a><span>30+伪文艺直男</span></a></li>
-      <li><a><span>已婚未育<br><em>(今年要小孩)</em></span></a></li>
-      <li><a><span>普通篮球爱好者<br><abbr title="M~V~P">马布里</abbr>脑残粉</span></a></li>
+      <li><a><span>已婚未育<br></span></a></li>
+      <li><a><span>普通篮球爱好者<br><del><abbr title="M~V~P">马布里</abbr>脑残粉</del></span></a></li>
       <li><a><span>会弹钢琴<br>自娱自乐</span></a></li>
       <li><a><span>英语<abbr title="六级轻松，托福八十多分，过了BEC中级">尚佳</abbr><br>流畅阅读英文资料</span></a></li>
-      <li><a><span><abbr title="动健身工具App，很不错的">Keep</abbr>中度用户<br><em>但还是瘦不下来，咋回事？？？</em></span></a></li>
-      <li><a><span>热爱诺兰<br>爱看恐怖片<br></span></a></li>
-      <li><a><span>时而自卑，时而自负，常态纠结</span></a></li>
-      <li class="index-old"><a href="../index-old.html"><span>旧版主页入口<br>练习任务</span></a></li>
-      <li class="index-old"><a href="pe-idea/index.html"><span>PE-IDEA-V0.3<br>品意设计</span></a></li>
+      <li><a><span><abbr title="动健身工具App，很不错的">Keep</abbr>中度用户<br>减肥初见成效</span></a></li>
+      <li><a><span>喜欢复习老片<br>武林外传、寻妈记<br>周星驰、灌篮高手<br></span></a></li>
+      <li><a><span>时而自卑，时而自负</span></a></li>
     </ul>
   </div>
 </div>

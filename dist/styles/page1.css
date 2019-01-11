@@ -76,7 +76,24 @@ body {
   left: 50%;
   top: 35%;
   transform: translateX(-50%);
+  cursor: default;
 }
+
+.intro {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  transition: all 0.8s linear;
+  opacity: 0;
+}
+#wrap1 h1:hover+.intro{
+  transform: translate(-50%, 40px);
+  opacity: 1;
+
+}
+
 footer {
   position: absolute;
   left: 50%;
@@ -86,7 +103,6 @@ footer {
   overflow: hidden;
 }
 footer ul {
-  width: 400px;
   border-right: 0;
   overflow: hidden;
 }
@@ -117,6 +133,7 @@ footer #contact {
 #wrap2 #left {
   width: 50%;
   height: 100%;
+  min-height: 500px;
   float: left;
   position: relative;
 }
@@ -237,7 +254,7 @@ footer #contact {
   line-height: 32px;
 }
 #wrap2 #right1 ul#rightUl .page1 p:first-child {
-  margin-top: 55px;
+  margin-top: 70px;
 }
 .btn {
   width: 50%;
@@ -416,23 +433,35 @@ footer #contact {
 }
 .project_exam {
   background: url("../images/exam.png") no-repeat center 10%;
-  background-size: 140px;
+  background-size: 170px;
 }
 .project_tutor {
   background: url("../images/tutor.jpg") no-repeat center 10%;
-  background-size: 140px;
+  background-size: 170px;
+}
+.project_CRM {
+  background: url("../images/CRM.png") no-repeat center 10%;
+  background-size: 170px;
+}
+.project_wordcup {
+  background: url("../images/wordcup.png") no-repeat center 10%;
+  background-size: 170px;
 }
 .project_website {
   background: url("../images/website.jpg") no-repeat center 10%;
-  background-size: 140px;
+  background-size: 170px;
 }
 .project_pe {
   background: url("../images/pe.jpg") no-repeat center 10%;
-  background-size: 140px;
+  background-size: 170px;
 }
 .project_homepage {
   background: url("../images/homepage.jpg") no-repeat center 10%;
-  background-size: 140px;
+  background-size: 170px;
+}
+.project_wechat {
+  background: url("../images/wechat-qcode.jpg") no-repeat center 10%;
+  background-size: 90px;
 }
 .project_more {
   background: url("../images/continued.jpg") no-repeat center;
