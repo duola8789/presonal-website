@@ -90,6 +90,12 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.page2Main .intro {
+  margin-top: 20px;
+}
+.page2Main .duration {
+  margin-top: 12px;
+}
 .wrap {
   margin: 0 auto;
   color: #999;
