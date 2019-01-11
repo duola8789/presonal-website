@@ -79,6 +79,14 @@ body {
   cursor: default;
 }
 
+.audio {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 100;
+  opacity: 0.5;
+}
+
 .intro {
   position: absolute;
   left: 50%;
@@ -91,7 +99,6 @@ body {
 #wrap1 h1:hover+.intro{
   transform: translate(-50%, 40px);
   opacity: 1;
-
 }
 
 footer {
