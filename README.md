@@ -11,3 +11,11 @@
 需要勾选`ADVANCED OPTIONS`中的`PASSIVE MODE`
 
 当前设置为需要手动同步至FTP
+
+## 本地开发
+
+使用Node搭建简易静态服务器
+
+```BASH
+npm run dev
+```

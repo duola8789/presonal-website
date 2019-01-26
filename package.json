@@ -1,0 +1,19 @@
+{
+  "name": "oldzhou",
+  "version": "1.0.0",
+  "description": "当前无需编译，无压缩，纯静态页面（LOW)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duola8789/oldzhou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duola8789/oldzhou/issues"
+  },
+  "homepage": "https://github.com/duola8789/oldzhou#readme"
+}
