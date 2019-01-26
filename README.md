@@ -9,3 +9,5 @@
 ![](http://image.oldzhou.cn/捕获.PNG)
 
 需要勾选`ADVANCED OPTIONS`中的`PASSIVE MODE`
+
+当前设置为需要手动同步至FTP
