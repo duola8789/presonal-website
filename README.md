@@ -10,7 +10,7 @@
 
 需要勾选`ADVANCED OPTIONS`中的`PASSIVE MODE`
 
-当前设置为需要手动同步至FTP
+当前设置为需要手动同步至FTP，快捷键`Ctrl` + `Alt` + `Shift` + `X`
 
 ## 本地开发
 
