@@ -71,14 +71,14 @@ body {
   color: #dfdfdf;
   text-align: center;
 }
-#wrap1 h1 {
+#wrap1 .title-container {
   position: absolute;
   left: 50%;
   top: 35%;
   transform: translateX(-50%);
   cursor: default;
+  width: 100%;
 }
-
 .audio {
   position: fixed;
   left: 10px;
@@ -86,18 +86,16 @@ body {
   z-index: 100;
   opacity: 0.5;
 }
-
 .intro {
   position: absolute;
   left: 50%;
-  bottom: 40%;
+  bottom: -10px;
   transform: translateX(-50%);
   pointer-events: none;
   transition: all 0.8s linear;
   opacity: 0;
 }
 #wrap1 h1:hover+.intro{
-  transform: translate(-50%, -30px);
   opacity: 1;
 }
 
