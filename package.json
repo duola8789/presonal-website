@@ -4,11 +4,19 @@
   "description": "当前无需编译，无压缩，纯静态页面（LOW)",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "restart": "pm2 restart ecosystem.config.js --env production",
+    "stop": "pm2 stop ecosystem.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/duola8789/oldzhou.git"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "pm2": "^5.3.0",
+    "prettier": "^3.0.3"
   },
   "author": "",
   "license": "ISC",
